@@ -1,0 +1,59 @@
+<!-- 
+ Data types 
+
+1.Primitive data-type
+--predefined/built in data-type
+--store single
+1.String--let name="abc"
+2.Number--let a=5;
+3.Boolean--true/false x==y
+4.Undefined--declared but not assign let a
+5.Null--o/p--object --Intention absent of value
+
+2.Non-Primitive data-type
+--store Multiple value
+1.Object
+--key & value
+--store in {}        
+2.Array
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        //<!-- 1.Primitive data-type -->
+        var a=undefined;
+        var b="test";
+        var c=true;
+        var d=5;
+        var e=null;
+        document.write(typeof(a)+"<br>")// undefined
+        document.write(typeof(b)+"<br>")// string
+        document.write(typeof(c)+"<br>")// boolean 
+        document.write(typeof(d)+"<br>")// number
+        document.write(typeof(e)+"<br>")// object
+
+        //<!-- 2.Non-Primitive data-type -->
+        //<!-- 1.object -->
+        const person={firstName:"abc",lastName:"xyz",age:22}
+        document.write(person.firstName+"<br>")// abc
+        document.write(person["lastName"]+"<br>")// xyz
+        document.write(person.age+"<br>")// 22
+        //<!-- 2.Array -->
+        const fruits=["Banana","Apple","Mango","Orange"]
+        document.write(fruits[0]+"<br>");// Banana
+        document.write(fruits[1]+"<br>");// Apple
+        document.write(fruits[2]+"<br>");// Mango
+        document.write(fruits[3]+"<br>");// Orange
+        document.write(fruits[4]+"<br>");// undefined
+        document.write(fruits.length+"<br>");// 4
+        document.write(fruits[fruits.length-1]+"<br>")// Orange
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
