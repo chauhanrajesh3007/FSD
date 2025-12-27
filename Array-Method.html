@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        //<!-- 1.push() -->
+        let fruits=["Apple","Banana"];
+        fruits.push("Orange");
+        console.log(fruits);
+
+        //<!-- 2.pop() -->
+        let removed =fruits.pop();
+        console.log(fruits)
+        console.log(removed)
+
+        //<!-- 3.map() -->
+        let nums=[1,2,3,4];
+        let squares=nums.map(num=>num*num);
+        console.log(squares)
+
+        //<!-- 4.filter() -->
+        let ages=[12,18,25,14];
+        let adults=ages.filter(age=>age>=18);
+        console.log(adults)
+
+        //<!-- 5.for each() -->
+        let names=["abc","xyz","pqr"];
+        names.forEach(name=>{console.log("Hello "+name);})
+
+        //<!-- 6.includes() -->
+        let colors=["Red","Green","Blue"];
+        console.log(colors.includes("Green"));
+        console.log(colors.includes("Yellow"));
+
+        //<!-- 7.find() -->
+       let users=[{id:1,name:"ABC"},
+                  {id:2,name:"PQR"},
+                  {id:3,name:"CDE"}];
+       user=users.find(u=>u.id==2);
+       console.log(user) 
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
