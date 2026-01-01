@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function fun(a,b,...c){
+            console.log(a);
+            console.log(b);
+            console.log(c)
+        }
+        fun(1,2,3,4,5);
+
+        function fun1(a,b,...c){
+            console.log(`${a} ${b}`);
+            console.log(c);
+            console.log(c[0])
+            console.log(c.indexOf("PQR"));
+            console.log(c.indexOf("MNO"));
+        }
+        fun1("ABC","XYZ","PQR","MNO","STU")
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- Most IMP -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        //<!-- Syntax -->
+        // function functionname(parameter1,parameter2){functionbody}
+        //functionname=latter/_/$
+
+        //<!-- 1.Function Triggered By Event(Button Click) -->
+        function showMassage(){alert("Button Clicked")}
+        function showMassage1(a,b){alert(a+" "+b)}
+        function showMassage1(a,b){c=a+b 
+            alert("Addition="+c)}
+
+        //<!-- 2.Function Called Explicity From JS Code -->
+        function add(a,b){
+            return a+b;
+        }
+        let result=add(5,10);
+        document.write(result+"<br>"+"<br>")
+        document.write("Addition="+add(5,10)+"<br>"+"<br>")
+    </script>
+    <script>
+        //<!-- 3.Automatically Execute The Function -->
+        (function(){document.write("This function run automatically"+"<br>"+"<br>");})();
+    </script>
+    <script>
+        function info(first,last){var full=first+" "+last; return full;}
+        function hello(){var result=info("abc","xyz");document.write(result);}
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Clike me" onclick="showMassage()"><br><br>
+    <input type="button" value="Clike me" onclick="showMassage1(5,10)"><br><br>
+    <input type="button" value="Info" onclick="hello()"><br><br>
+</body>
+</html>
