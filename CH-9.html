@@ -1,0 +1,100 @@
+<!--CH IMP FOR CODE-->
+<!-- DOM-- Document Object Model--js-html -->
+<!-- Root Element -->
+<!-- 1.<head>
+- <title> --text
+
+2.<body>
+- <a>, <p>,<h> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.document.write("") -->
+
+    <!-- 2.getElementById() -->
+    <p id="p1"> Hello </p>
+    <script>
+        document.getElementById("p1").innerHTML="Hi";
+    </script>
+     
+    <!-- 3.getElementByClassName() -->
+    <p class="c1"> Paragraph </p>
+    <p class="c2"> Paragraph-1 </p>
+    <p class="c1"> Paragraph </p>
+    <p class="c2"> Paragraph-1 </p>
+    <script>
+        var x=document.getElementsByClassName("c1");
+        x[0].innerHTML="Changed";
+        x[1].innerHTML="Paragraph-2";
+    </script>
+    <script>
+        var x=document.getElementsByClassName("c2");
+        for(var i=0;i<x.length;i++)
+        {
+            x[i].innerHTML="Changed using for loop";
+        }
+    </script>
+
+    <!-- 4.querySelector() -->
+    <p> Paragraph </p>
+    <p class="c3"> Paragraph </p>
+    <p id="c4"> Paragraph-1 </p>
+    <div>
+        <p> Div Paragraph</p>
+    </div>
+    <script>
+        document.querySelector("P").style.color="red";
+    </script>
+    <script>
+        document.querySelector(".c3").style.color="red";
+        document.querySelector("#c4").style.color="blue";
+        document.querySelector("div p").style.color="yellow";
+    </script>
+    
+    <!-- 5.querySelectorAll() -->
+    <p> Paragraph-1 </p>
+    <p> Paragraph-2 </p>
+    <script>
+        var x=document.querySelectorAll("p");
+        for (var i=0;i<x.length;i++)
+        {
+            x[i].style.color="pink";
+        } 
+    </script>
+
+    <!-- 6.innerHTML -->
+    <p id="p2"> Hello1 </p>
+    <script>
+        document.getElementById("p2").innerHTML="<b> Hello </b>";
+    </script>
+
+    <!-- 7.innerText -->
+    <p id="p3"> Hello1 </p>
+    <script>
+        document.getElementById("p3").innerText= "Hello";
+    </script>
+
+    <!-- 8.SetAttribute() -->
+    <img id="img1">
+    <script>
+        document.getElementById("img1").setAttribute("src","1.PNG");
+    </script>
+
+    <!-- 9.SetAttribute() -->
+    <p id="p4" title="Demo text"> Hello </p>
+    <script>
+       alert(document.getElementById("p4").getAttribute("title"));
+    </script>
+
+    <!-- 10.removeAttribute() -->
+    <p id="p5" title="Demo"> Hello </p>
+    <script>
+       alert(document.getElementById("p5").removeAttribute("title"));
+    </script>
+</body>
+</html>
