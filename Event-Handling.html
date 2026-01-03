@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.Function Call Without Parameter -->
+    <script>
+    function down()
+    {
+        document.getElementById("test").innerHTML="Mouse Down"
+    }
+    </script>
+    <p onmousedown="down()" id="test"> Test </p>
+
+    <!-- 2.Function Call With Parameter -->
+    <script>
+        function down(x)
+        {
+            x.innerHTML="Mouse Up";
+        }
+    </script>
+    <p onmouseup="down(this)"> Test-1    </p>
+
+    <!-- 3.Inline JS -->
+    <p onmouseover="this.style.color='red';this.innerHTML='Mouse Over'";> Test-2 </p>
+
+    <!-- 4. Mouse Event -->
+    <!-- 1.Onclick -->
+    <h2 onclick="alert(this.innerHTML)"> Hello </h2>
+    <div onmousedown="mdown(this)" onmouseup="mup(this)" style="background-color: blue;width: 70px;height: 50px;padding: 20px;border-radius: 20px;border: 10px solid red;">
+        Click me
+    </div>
+    <script>
+        function mdown(e)
+        {
+            e.style.backgroundColor="yellow"
+            e.innerHTML="Click"
+        }
+        function mup(e)
+        {
+            e.style.backgroundColor="pink";
+            e.innerHTML="Release";
+        }
+    </script>
+
+<div onmouseover="mover(this)" onmouseout="mout(this)" style="background-color: blue;width: 70px;height: 50px;padding: 20px;border-radius: 20px;border: 10px solid red;">
+    Click me
+</div>
+<script>
+    function mover(e)
+    {
+        e.style.backgroundColor="yellow"
+        e.innerHTML="Over"
+    }
+    function mout(e)
+    {
+        e.style.backgroundColor="pink";
+        e.innerHTML="Out";
+    }
+
+    
+</script>
+</body>
+</html>
