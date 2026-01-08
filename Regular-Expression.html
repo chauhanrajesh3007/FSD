@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- syntax--RegexExpobject.test(string)
+    pat.test(v); -->
+    <script>
+        function fun()
+        {
+            pat=/[^abc]/;//abc/i,[abc]/i,^[abc]/i,[^abc]/i,/t$,/[0-9],/Bo*,/^\d{10,12}$,/^\D{10}$,/^\w{10}$,
+            u=document.getElementById("t1").value;
+            if (pat.test(u)){alert("Pattern Matched");}
+            else{alert("Pattern Not Matched");}
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="submit" onclick="fun()">
+</body>
+</html>
