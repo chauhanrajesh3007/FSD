@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.Event.Target -->
+    <select onchange="show(event)">
+        <option value=""readonly>Select your favourit color</option>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Pink">Pink</option>
+        <option value="Orange">Orange</option>
+        <option value="Yellow">Yellow</option>
+    </select>
+    <script>
+        function show(e)
+        {
+            //alert(e.target.value);
+            document.body.style.backgroundColor=event.target.value;
+        }
+    </script>
+
+    <!-- 2.Event.type -->
+    <button onclick="check(event)">Click</button>
+    <script>
+        function check(e)
+        {
+        alert(e.type);
+        }
+    </script>
+
+    <!-- 3.Event.key -->
+    <body onkeypress="keycheck(event)">
+        <script>
+            function keycheck(e)
+            {
+                alert(`key pressed : ${e.key}`);
+            }
+        </script>
+    </body>
+
+    <!-- 4.Event.preventDefault() -->
+    
+</body>
+</html>
