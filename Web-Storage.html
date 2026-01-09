@@ -1,0 +1,49 @@
+<!-- WEB-STORAGE--[Key:Value] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 1.Local Storage -->
+     <script>
+        localStorage.setItem("Username","Raghav")//--1st key & 2nd value
+        //Retrive
+        let user=localStorage.getItem("Username");
+        console.log(user);
+
+        //Update
+        localStorage.setItem("Username","Xyz");
+        localStorage.setItem("Username1","Mayank");
+
+        //Delete One Item
+        localStorage.removeItem("Username1");
+
+        //Delete All
+        localStorage.clear();
+
+     </script>
+     <!-- 2.Session Storage -->
+      <script>
+        sessionStorage.setItem("Username","Raghav")//--1st key & 2nd value
+        //Retrive
+        let user1=sessionStorage.getItem("Username");
+        console.log(user);
+
+        //Update
+        sessionStorage.setItem("Username","Xyz");
+        sessionStorage.setItem("Username1","Mayank");
+
+        //Delete One Item
+        sessionStorage.removeItem("Username1");
+
+        //Delete All
+        sessionStorage.clear();
+      </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
